@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+header{
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	top: 0;
+}
+
+header .logos{
+	width: 100%;
+	padding-left: 10%;
+	padding-top: 2px;
+
+}
+
+body{
+	width: 100%;
+	height: 500vh;
+}
+
+.nav-container a.hamb{
+	display: none;
+}
+
+.header-container{
+	background: #ff3f34;
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+
+.header-container-2{
+	width: 100%;
+	height: 8px;
+}
+
+.nav-container{
+	background: #1B1464;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nav-container nav a{
+	border-radius: 15px;
+	display: inline-flex;
+	justify-content: space-around;																		
+	text-decoration: none;
+	color: white;
+	padding: 0 25px;
+	margin: 0 15px;
+	font-weight: bolder;
+}
+
+.nav-container nav .navBotones{
+	padding: 8px 30px;
+}
+
+.nav-container nav .navBotones:hover{
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	padding: 8px 30px;
+}
+
+.logos .logo1{
+	width: 8%;
+}
+
+.logos .logo2{
+	width: 15%;
+}
+
+#inicio{
+	position: relative;
+	margin-top: 100px;
+}
+
+#inicio .slider-inner{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	height: 500px;
+}
+
+.slider-inner h1{
+	position: absolute;
+	z-index: 2;
+	font-weight: bolder;
+	color: #6c5ce7;
+	top: 70% ;
+}
+
+#inicio .slider-inner img{
+	width: 80%;
+	height: 100%;
+	position: absolute;
+
+}
+
+.slider-inner img{
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.slider-inner img.img-activa{
+	opacity: 1;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media(max-width: 767px){
+
+	.nav-container nav a{
+		position: fixed;
+		width: 100%;
+		height: 50%;
+		background-color: white;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-right: 15px;
+		padding-left: 15px;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		transition: all 0.4s ease;
+		transform: translateX(100%);
+		border-radius: 20px;
+		border: 3px solid black;
+		text-align: center;
+	}
+
+	.nav-container a.hamb{
+		display: block;
+		position: relative;
+		right: 5%;
+		font-size: 40px;
+		color: #ff3f34;
+		padding-top: 2px;
+	}
+
+	.logos .logo1{
+	width: 25%;
+	}
+
+	.logos .logo2{
+		width: 46%;
+	}
+
+	#inicio .slider-inner img{
+	width: 90%;
+	height: 60%;
+	position: absolute;
+
+	}
+
+	.slider-inner h1{
+	position: absolute;
+	z-index: 2;
+	font-weight: bolder;
+	color: #6c5ce7;
+	top: 56% ;
+	}
+
+}
