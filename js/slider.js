@@ -1,5 +1,3 @@
-
-
 const slides = document.getElementById('slides');
 const slidesInner = slides.querySelector('.slider-inner');
 const imagenes = slidesInner.querySelectorAll('img');
@@ -20,16 +18,9 @@ function slide3(sliderId){
 };
 
 function mover(){
-	console.log("todopeola");
  	slide1();
  	setTimeout(slide2, 5000);
  	setTimeout(slide3, 10000);
- 	
 };
 
-
-	
-
-
-setInterval(mover, 15000);
-	
+setInterval(mover, 15000);	
