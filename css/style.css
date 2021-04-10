@@ -102,8 +102,7 @@ body{
 }
 
 #inicio .slider-inner img{
-	width: 80%;
-	height: 100%;
+	width: 55%;
 	position: absolute;
 
 }
@@ -128,10 +127,10 @@ body{
 		margin-top: 110px;
 	}
 
-	.nav-container nav a{
+	.nav-container nav{
 		position: fixed;
 		width: 100%;
-		height: 50%;
+		height: 60%;
 		background-color: white;
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -143,9 +142,19 @@ body{
 		flex-direction: column;
 		transition: all 0.4s ease;
 		transform: translateX(100%);
-		border-radius: 20px;
-		border: 3px solid black;
+		border-radius: 0 0 20px 20px;
+		border: 3px solid transparent;
 		text-align: center;
+	}
+
+	.nav-container nav .navBotones{
+		color: black;
+		padding: 16px 0;
+		font-size: 20px;
+	}
+
+	.nav-container nav.activa{
+		transform: translateX(0);
 	}
 
 	.nav-container a.hamb{
@@ -324,10 +333,31 @@ body{
 		width: 100%;
 	}
 
-	.sponsor p{
+	.copy{
+		position: relative;
+		width: 100%;
+		background: grey;
+	}
+
+	.copy p{
 		text-align: center;
 		font-weight: bold;
-		bottom: 0;
+		color: white;
+		padding-top: 6px;
+	}
+
+	.copy ul{
+		text-align: center;
+	}
+
+	.copy ul li{
+		display: inline-block;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	.copy li a{
+		color: white;
 	}
 
 

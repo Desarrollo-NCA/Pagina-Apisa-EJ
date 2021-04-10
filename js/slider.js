@@ -23,4 +23,10 @@ function mover(){
  	setTimeout(slide3, 10000);
 };
 
-setInterval(mover, 15000);	
+setInterval(mover, 15000);
+
+function navActivo(){
+	document.querySelector(`nav`).classList.toggle('activa');
+	document.querySelector(`.hamb i`).classList.toggle('fa-bars');
+	document.querySelector(`.hamb i`).classList.toggle('fa-times-circle');
+}	
