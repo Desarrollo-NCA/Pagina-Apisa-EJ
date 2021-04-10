@@ -25,8 +25,23 @@ function mover(){
 
 setInterval(mover, 15000);
 
-function navActivo(){
+
+document.querySelector(`.hamb`).onclick = function navActivo(){
 	document.querySelector(`nav`).classList.toggle('activa');
 	document.querySelector(`.hamb i`).classList.toggle('fa-bars');
 	document.querySelector(`.hamb i`).classList.toggle('fa-times-circle');
 }	
+
+
+
+function onHref(){
+	document.querySelector(`nav`).classList.remove('activa');
+	document.querySelector(`.hamb i`).classList.remove('fa-times-circle');
+	document.querySelector(`.hamb i`).classList.add('fa-bars');
+}
+
+document.getElementById(`nav1`).addEventListener("click", onHref);
+document.getElementById(`nav2`).addEventListener("click", onHref);
+document.getElementById(`nav3`).addEventListener("click", onHref);
+document.getElementById(`nav4`).addEventListener("click", onHref);
+document.getElementById(`nav5`).addEventListener("click", onHref);

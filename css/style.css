@@ -153,6 +153,13 @@ body{
 		font-size: 20px;
 	}
 
+	.nav-container nav .navBotones:hover{
+		color: white;
+		padding: 16px 0;
+		font-size: 20px;
+		background: black;
+	}
+
 	.nav-container nav.activa{
 		transform: translateX(0);
 	}
@@ -164,6 +171,7 @@ body{
 		font-size: 40px;
 		color: #ff3f34;
 		padding-top: 2px;
+		transition: all .2s ease;
 	}
 
 	.logos .logo1{
