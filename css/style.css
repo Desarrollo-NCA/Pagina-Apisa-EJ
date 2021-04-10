@@ -98,7 +98,7 @@ body{
 	font-weight: bolder;
 	color: #6c5ce7;
 	top: 70% ;
-	text-shadow: 5px 2px 28px black;
+	text-shadow: 5px 2px 28px white;
 }
 
 #inicio .slider-inner img{
@@ -115,6 +115,180 @@ body{
 .slider-inner img.img-activa{
 	opacity: 1;
 }
+
+h1.titulo{
+	text-align: center;
+	color: white;
+	background: #1B1464;
+
+}
+
+#calendario{
+	text-align: center;
+	margin: 10px 0;
+}
+
+/*-----------------*/
+
+
+.inscri-container{
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.inscri-container h1{
+		background: #1B1464;
+		color: white;
+	}
+
+	.inscri-container h2{
+		background: #ff3f34;
+		color: black;
+	}
+
+	.formulario{
+		overflow: hidden;
+		width: 60%;
+		height: 200px;
+		border: 2px solid transparent;
+		border-radius: 20px;
+		margin-bottom: 10px;
+		box-shadow: 0 2px 15px;
+		text-align: center;
+		position: relative;
+		left: 20%;
+	}
+
+	.pago{
+		overflow: hidden;
+		border-radius: 20px;
+		width: 60%;
+		height: 300px;
+		border: 2px solid transparent;
+		box-shadow: 0px 2px 15px;
+		margin-bottom: 10px;
+		position: relative;
+		left: 20%;
+
+	}
+
+	.inscri-container .grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		position: relative;
+		justify-content: center;
+		top: 40px;
+	}
+
+	.grid a{
+		text-decoration: none;
+		background: #1B1464;
+		padding: 10px 0;
+		margin: 10px auto;
+		border-radius: 15px;
+		color: white;
+		font-weight: bold;
+		width: 40%;
+	}
+
+	.grid a:hover{
+		background: black;
+		color: white;
+	}
+
+	.grid label{
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.cbu{
+		position: relative;
+		top: 90px;
+		font-weight: bold;
+		text-align: center;
+		margin-left: 10px;
+	}
+
+	#contacto{
+		width: 100%;
+		margin-top: 10px;
+		background: black;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	.contacto-container ul{
+		list-style: none;
+		margin: 10px 10px;
+	}
+
+	ul.redes li{
+		color: white;
+		display: inline-block;
+	}
+
+	.redes li a{
+		color: white;
+		font-size: 30px;
+		padding: 0 12px;
+	}
+
+	.telefono li{
+		padding: 5px 0;
+
+	}
+
+	#contacto .contacto-container{
+		display: block;
+		position: relative;
+		color: white;
+		width: 100%;
+		height: 200px;
+		text-align: center;
+		top: 20px;
+	}
+
+	#contacto .sponsor{
+		width: 100%;
+		height: 100px;
+		position: relative;
+		color: white;
+	}
+
+	.sponsor img{
+		width: 100%;
+	}
+
+	.copy{
+		position: relative;
+		width: 100%;
+		background: grey;
+	}
+
+	.copy p{
+		text-align: center;
+		font-weight: bold;
+		color: white;
+		padding-top: 6px;
+	}
+
+	.copy ul{
+		text-align: center;
+	}
+
+	.copy ul li{
+		display: inline-block;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	.copy li a{
+		color: white;
+	}
+
 
 
 
@@ -245,6 +419,7 @@ body{
 		border-radius: 20px;
 		margin-bottom: 10px;
 		box-shadow: 0 2px 15px;
+		left: 0;
 	}
 
 	.pago{
@@ -255,6 +430,7 @@ body{
 		border: 2px solid transparent;
 		box-shadow: 0px 2px 15px;
 		margin-bottom: 10px;
+		left: 0;
 	}
 
 	.inscri-container .grid{
@@ -273,6 +449,7 @@ body{
 		border-radius: 15px;
 		color: white;
 		font-weight: bold;
+		width: auto;
 	}
 
 	.grid a:hover{
@@ -297,6 +474,7 @@ body{
 		width: 100%;
 		margin-top: 10px;
 		background: black;
+		display: block;
 	}
 
 	.contacto-container ul{
