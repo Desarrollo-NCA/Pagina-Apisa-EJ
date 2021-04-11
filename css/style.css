@@ -322,13 +322,15 @@ h1.titulo{
 	}
 
 	.nav-container nav .navBotones{
-		color: black;
+		color: white;
+		background: black;
+		margin: 4px 40px;
 		padding: 16px 0;
 		font-size: 20px;
 	}
 
 	.nav-container nav .navBotones:hover{
-		color: white;
+		color: grey;
 		padding: 16px 0;
 		font-size: 20px;
 		background: black;
